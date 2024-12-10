@@ -1,0 +1,86 @@
+version: "3.1"
+services:
+    nginx:
+        image: nginx:alpine
+        restart: always
+        ports:
+            - "80:80"
+        volumes:
+            - ./frontend/dist:/srv/www/static
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - php
+            - nodejs
+            - mysql
+            - pg
+    nodejs:
+        image: node:alpine
+        environment:
+            NODE_ENV: production
+        working_dir: /home/app
+        restart: always
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./node-app:/home/app
+        depends_on:
+            - php
+        command: ["npm", "run", "start:dev"]
+    php:
+        image: webdevops/php-apache-dev:8.2
+        volumes:
+            - ./php-app:/app
+        environment:
+            WEB_DOCUMENT_ROOT: /app/public
+    mysql:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: laravel
+            MYSQL_USER: mysqluser
+            MYSQL_PASSWORD: password
+        ports:
+            - "3306:3306"
+        volumes:
+            - mysql-data:/var/lib/mysql
+        restart: always
+    pg:
+        image: postgres:latest
+        environment:
+            POSTGRES_USER: pguser
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: nestjs
+        ports:
+            - "5432:5432"
+        restart: always
+        volumes:
+            - pg-data:/var/lib/postgresql/data
+    keycloak:
+        image: keycloak/keycloak
+        container_name: oauth
+        ports:
+            - 8080:8080
+        environment:
+            - KEYCLOAK_ADMIN=admin
+            - KEYCLOAK_ADMIN_PASSWORD=admin
+            - DB_VENDOR=postgres
+            - DB_ADDR=pg
+            - DB_DATABASE=keycloak
+            - DB_USER=keycloak
+            - DB_PASSWORD=keycloak
+        volumes:
+            - ./keycloak:/opt/keycloak/data/import
+        command: -v start-dev --import-realm
+        depends_on:
+            - pg
+            - adminer
+    adminer:
+        image: adminer
+        depends_on:
+            - pg
+        restart: always
+        ports:
+            - 8001:8080
+volumes:
+    pg-data:
+    mysql-data:

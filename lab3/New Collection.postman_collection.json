@@ -1,0 +1,1572 @@
+{
+	"info": {
+		"_postman_id": "5aa3694f-ef8c-40de-8923-f128e7cd57e7",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40305750"
+	},
+	"item": [
+		{
+			"name": "Nest",
+			"item": [
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "categories",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categories",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Electronics\",\r\n  \"description\": \"Category for all electronic products like phones, laptops, and accessories.\",\r\n  \"image\": \"electronics.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/node/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categories/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/categories/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categories/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"test2\",\r\n  \"description\": \"Category for all electronic products like phones, laptops, and accessories.\",\r\n  \"image\": \"electronics.jpg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/node/categories/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categories/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/categories/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "categories/id/products",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "NestUserCategoriesToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/categories/2/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"categories",
+										"2",
+										"products"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "products",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "NestUserProductsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "products",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "NestUserProductsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Product Name\",\r\n  \"description\": \"Product description\",\r\n  \"price\": 19.99,\r\n  \"image\": \"image.jpg\",\r\n  \"categoryId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/node/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "products/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "NestUserProductsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "products/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "NestUserProductsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Product Name\",\r\n  \"description\": \"Product description\",\r\n  \"price\": 19.99,\r\n  \"image\": \"image.jpg\",\r\n  \"categoryId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/node/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "products/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "NestUserProductsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/node/api",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "nest-app",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/node/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"node",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "PHP",
+			"item": [
+				{
+					"name": "Subscribers",
+					"item": [
+						{
+							"name": "subscribers",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscribersToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscribers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscribers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscribers",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscribersToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"example2@example.com\",\r\n  \"name\": \"John Doe\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/php/api/subscribers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscribers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscribers/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscribersToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscribers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscribers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscribers/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscribersToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"example1000@example.com\",\r\n  \"name\": \"John Doe\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/php/api/subscribers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscribers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscribers/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscribersToken",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscribers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscribers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Subscriptions",
+					"item": [
+						{
+							"name": "subscriptions",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscriptionsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscriptions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscriptions",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscriptionsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"service\": \"example_service\",\r\n  \"topic\": \"example_topic\",\r\n  \"payload\": {\r\n    \"key\": \"value\",\r\n    \"key2\": \"value2\"\r\n  },\r\n  \"subscriber_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/php/api/subscriptions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscriptions/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscriptionsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscriptions/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscriptions",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscriptions/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscriptionsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"service\": \"2ttest\",\r\n  \"topic\": \"example_topic\",\r\n  \"payload\": {\r\n    \"key\": \"test\",\r\n    \"key2\": \"test\"\r\n  },\r\n  \"subscriber_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/php/api/subscriptions/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscriptions",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "subscriptions/id",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "tokenName",
+											"value": "PhpUserSubscriptionsToken",
+											"type": "string"
+										},
+										{
+											"key": "clientSecret",
+											"value": "PkW6J1TFvruIduQzdVo2ht2QfdpVxYtP",
+											"type": "string"
+										},
+										{
+											"key": "clientId",
+											"value": "php-app",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost/php/api/documentation",
+											"type": "string"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/php/api/subscriptions/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"php",
+										"api",
+										"subscriptions",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "NestAdminToken",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "http://localhost/node/api",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "RNZm4Af6rggX3Ssn7h1qpLLdJNVxyCpD",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "nest-app",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/auth",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "http://localhost:8080/realms/Sheiierman/protocol/openid-connect/token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

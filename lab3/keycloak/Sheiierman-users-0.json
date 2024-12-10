@@ -1,0 +1,188 @@
+{
+  "realm" : "Sheiierman",
+  "users" : [ {
+    "id" : "72b6b363-3d1a-460a-bfab-5b119ecc6420",
+    "username" : "categories-user",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test2@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733790828377,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fac1ea1b-5860-41c7-824e-26ac14a22807",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733790840882,
+      "secretData" : "{\"value\":\"6/VhTexs7qljgN6SoQwwldPfwBZCX2GUL2Jzw+zHiOA=\",\"salt\":\"gudCgF4sw+bMFZ6XQhUbug==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-sheiierman", "categories-role" ],
+    "clientRoles" : {
+      "nest-app" : [ "categories-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "67e69714-2811-4c82-9451-3e20e1988e1f",
+    "username" : "nest-admin",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test5@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733790977987,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "4e39f7b7-7ff7-4799-95fd-8d6821a8e32c",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733790987067,
+      "secretData" : "{\"value\":\"4SKe/imiggCPdt+rZs07qM2gOMexl0Apjy1KH7QmuAo=\",\"salt\":\"32rKhFkKqKsXth/VoxqJFA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-sheiierman", "categories-role", "products-role" ],
+    "clientRoles" : {
+      "nest-app" : [ "products-role", "categories-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "cd22da2d-8c9d-4909-a0e7-2a72204083f0",
+    "username" : "php-admin",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test6@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733791015248,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "80a47d0a-0da7-40ca-addd-15213f8278f1",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733791025450,
+      "secretData" : "{\"value\":\"RBWf1RAd++vUxbU5YB3XL9Xn3SThG6JmnNur+dUaZo0=\",\"salt\":\"x1r8FFp92OIiOLmY1VT/oA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "subscriptions-role", "subscribers-role", "default-roles-sheiierman" ],
+    "clientRoles" : {
+      "php-app" : [ "subscribers-role", "subscriptions-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "b5386c0d-a384-4421-b463-129230eb2fca",
+    "username" : "products-user",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test3@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733790878423,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "fd7b286a-76db-412d-b023-21ad29ebe9c5",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733790883228,
+      "secretData" : "{\"value\":\"cVR6gbZo2ltoleDc88/1iH9n9Hy4E4c6W211nUJq1sk=\",\"salt\":\"KlNQ8gw9i7bBrF/sGNDeOA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-sheiierman", "products-role" ],
+    "clientRoles" : {
+      "nest-app" : [ "products-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "bca56ebd-da9c-437e-84f2-38c259668968",
+    "username" : "service-account-nest-app",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733773524957,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "nest-app",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-sheiierman" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6b9d8e57-df5a-4465-8c8e-e9889f80f581",
+    "username" : "service-account-php-app",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733790749312,
+    "enabled" : true,
+    "totp" : false,
+    "serviceAccountClientId" : "php-app",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-sheiierman" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "887c80e0-9734-401d-993c-738bfabd503b",
+    "username" : "subscribers-user",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733779997245,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "5da84f53-e92c-498e-ac76-0869a461b058",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733780021108,
+      "secretData" : "{\"value\":\"lGEkPn7JfYTdjndaPGM8JhDjmdFYjdkkvN3mAP3yzdY=\",\"salt\":\"RcrowNE2pYi7+d94EfKFyw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "subscribers-role", "default-roles-sheiierman" ],
+    "clientRoles" : {
+      "php-app" : [ "subscribers-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "c572ca18-8407-42cd-b686-2ad4f5a5c0e3",
+    "username" : "subscriptions-user",
+    "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test4@test.com",
+    "emailVerified" : false,
+    "createdTimestamp" : 1733790920323,
+    "enabled" : true,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "9d6bc2eb-f3d2-48b9-bcdf-aab75939147b",
+      "type" : "password",
+      "userLabel" : "My password",
+      "createdDate" : 1733790925045,
+      "secretData" : "{\"value\":\"VfT8JGvwJ8VwnoYZZHtfCozo5yRR1s3ser8uAuowahM=\",\"salt\":\"3vO21Cd65Ar0XlJLm8eFsQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "subscriptions-role", "default-roles-sheiierman" ],
+    "clientRoles" : {
+      "php-app" : [ "subscriptions-role" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
